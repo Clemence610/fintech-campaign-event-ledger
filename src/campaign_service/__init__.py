@@ -1,0 +1,1 @@
+"""Fintech campaign event service."""

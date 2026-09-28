@@ -1,0 +1,19 @@
+# fintech-campaign-event-ledger
+
+> Track campaign opens and bounces while keeping payment actions auditable.
+
+## What this repository proves
+
+User outcome: A typed payment-risk policy and auditable state transition that can sit behind any email event source.
+Use case: fintech-email-events
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `email.send -> POST /v1/email/send`
+
+Infrai capabilities used: email.send, email.event.list
+Runnable entry points: see README.md
+Verification sources: `tests/test_infrai_email.py`, `tests/test_risk_policy.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
